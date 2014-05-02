@@ -1,0 +1,368 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-image: ;
+	background-image: url('img/pattern-6hcr.png');
+	overflow: scroll;
+}
+/*
+H1 is used throughout the website at various headings
+
+*/
+h1{
+	
+	text-align: center;
+	font-size: 60px;
+	color:  #336699;
+	font-family: 'Gill Sans', ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
+/*
+Used throughout the website
+
+*/
+h2{
+	font-size: 16px;
+	font-family: 'Futura', 'LuxiMono', 'Bera Sans', 'Eurostyle', 'Lucida Calligraphy';
+	text-align: center;
+	color: #8A8A8A;
+
+}
+
+/*
+
+Used on the first page. Me with the suit on
+*/
+#profilePicture {
+	margin:auto;
+	background-image: url('img/test.png');
+	border: 1px solid #8A8A8A;
+	width: 250px;
+	height: 203px;
+ 	border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	z-index: -1;
+}
+/*
+On the contacts page
+
+*/
+#contactPicture {
+	background-image: url('img/ContactMe.png');
+	display:inline;
+	float:left;
+	border: 1px solid #8A8A8A;
+	width: 250px;
+	height: 203px;
+ 	border-radius: 80px;
+	-moz-border-radius: 80px;
+	-webkit-border-radius: 80px;
+}
+
+
+/*
+Container div for the Contacts page
+
+*/
+#faq{
+	margin-right: 15%;
+	margin-top: 50px;
+	text-align: center;
+}
+/*
+* EVERYTHING TO DO WITH THE PICTURES ON THE FIRST PAGE
+
+includes all animation, sizes, etc
+*/
+
+#container {
+    width: 1000px;
+    overflow: hidden;
+    margin: 50px auto;
+    height: 300px
+    background: white;
+    border: 1px dotted #8A8A8A;
+}
+.photobanner {
+    height: 300px;
+    width: 3350px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+/*keyframe animations*/
+.first {
+    -webkit-animation: bannermove 30s linear infinite;
+    -moz-animation: bannermove 30s linear infinite;
+    -ms-animation: bannermove 30s linear infinite;
+    -o-animation: bannermove 30s linear infinite;
+    animation: bannermove 30s linear infinite;
+}
+
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+
+
+/*
+* END OF PICTURES ON THE FRONT PAGE
+*/
+
+
+/*
+Nav bar
+creating the nav bar
+*/
+#header {
+	height: 100px;
+	padding 0;
+	margin 0;
+
+}
+
+/*
+
+Nav bar
+changing how the list appears
+*/
+#nav {
+	list-style: none;  
+	text-align: center;
+	border-bottom: 2px solid #B8CB99;
+}
+
+/*
+Nav bar
+Changing how the list looks
+
+*/
+#nav li {
+	display: list-item;
+	text-align: center;
+	border-left: none;
+	border-right: none;
+	display: inline;
+	line-height: 60px;
+
+	
+
+}
+/*
+Nav bar again
+Changing font of nav bar, how it looks, etc
+
+*/
+#nav li a {  
+
+    font-family: Lucida Sans Unicode, Arial, Helvetica, sans-serif;  
+    font-size: 15px;   
+    color: black;
+   	text-decoration: none;  
+	width: 200px;
+	height: 60px;
+	border: 1px solid #7DA1B2;
+	display: inline-block;
+	text-align: center;
+	margin: auto;
+	background-color: #FFFFFF;
+
+}
+/*
+Container for the picture on the AboutMe page
+		!!Look to get rid of this. It's extra
+*/
+#Contain {
+	margin-top: 50px;
+	text-align: center;
+}
+/*
+	On the About Me dic
+*/
+#Hobbies {
+	margin: auto;
+	display: inline-block;
+	text-decoration: none;
+	list-style: none;
+	float:left;
+	margin-left: 100px;
+	padding-right: 30px;
+	border-right: 1px dotted grey;
+
+}  
+
+/*
+	Changing how the list looks on the hobbies "About Me" page
+*/
+#Hobbies li {
+	list-style: none;
+	text-decoration: none
+}
+/*
+	List decoration for all a's
+*/
+a{
+	text-decoration: none;
+}
+
+/*
+	About me Page formatting
+*/
+#Biography {
+	margin: auto;
+	display: inline-block;
+	width: 800px;
+	float:right;
+	margin-right: 100px;
+}
+
+/*
+	About Me page formatting
+*/
+#Plans {
+	margin: auto;
+	display: inline-block;
+	clear:both;
+	border-top: 1px dotted grey;
+	padding-top: 50px;
+}
+
+/*
+	About me page list formatting
+*/
+#Plans li, #Hobbies li{
+	text-align:left;
+	list-style: none;
+	color: #668B8B;
+	font-size: 18px;
+	font-family: 'Museo Sans';
+}
+
+/*
+	Picture on the About Me page
+*/
+#QM {
+	clear:both;
+	float: left;
+	margin-left: 100px;
+	background-image: url('img/test.png');
+	border: 1px solid #8A8A8A;
+	width: 250px;
+	height: 203px;
+
+}
+
+/*
+	Picture of the first project on the Portfolio page
+*/
+#Project1{
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+	background-image: url('img/Project1.png');
+	border: 1px solid #8A8A8A;
+	width: 500px;
+	height: 303px;
+}
+
+/*
+	Container for the portfolio page
+*/
+#ProjectOne {
+	height: 400px;
+	width: 100%;
+	height:80%;
+	text-align: center;
+	display: block;
+}
+
+
+/*
+	Description for the first project
+*/
+#description {
+	float: left;
+	text-align: center;
+	margin-top: 100px;
+	border: 1px dashed #336699;
+	padding: 20px;
+
+}
+
+/*
+	Links at the bottom of the Portfolio page
+*/
+#links {
+	text-align: center;
+	border-top: 3px solid #336699;
+	border-bottom: 3px solid #336699;
+	width: 100%;
+	position: fixed;
+	bottom:0; 
+	z-index: -1;
+
+}
+#portHeading{
+	margin:0;
+	padding:0;
+	display:block;
+}
+
+/*
+	Formatting for all paragraphs
+*/
+p{
+	float:left;
+	font-size: 15px;
+	font-family: 'Minion';
+	text-align: center;
+	color: #668B8B;
+	margin-left: 10px;
+}
